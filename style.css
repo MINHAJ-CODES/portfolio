@@ -1,4 +1,133 @@
+/* General Styles */
 body {
-  font-family: Arial;
-  margin: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  color: #2980b9;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2 {
+  color: #2c3e50;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 30px;
+  font-size: 3em;
+}
+
+h2 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+p {
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+/* Sections */
+section {
+  padding: 50px 20px;
+}
+
+/* Skills */
+.skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills li {
+  background-color: #2980b9;
+  color: white;
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+
+.skills li:hover {
+  transform: scale(1.1);
+}
+
+/* Projects */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.project-card p {
+  font-size: 0.95em;
+  color: #555;
+}
+
+/* Contact */
+.contact {
+  text-align: center;
+}
+
+.contact a {
+  display: inline-block;
+  margin: 10px 20px;
+  font-weight: bold;
+  background-color: #2980b9;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+
+.contact a:hover {
+  background-color: #1f618d;
+}
+
+/* Footer spacing */
+footer {
+  height: 50px;
+}
+
+/* Responsive */
+@media(max-width: 650px) {
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
 }
